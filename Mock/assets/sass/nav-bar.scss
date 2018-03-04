@@ -1,0 +1,77 @@
+﻿@import "variables";
+@import "node_modules/bootstrap/scss/bootstrap";
+
+.navbar-expand-md {
+    img {
+        width: 200px;
+        margin: 20px;
+    }
+
+    .app-info {
+        margin-top: 5px;
+        .user-info a{
+            margin-left:10px;
+        }
+    }
+
+    .nav-title {
+        
+    }
+}
+
+
+
+.nav-parent {
+    .nav-item {
+        font-family: 'Oswald';
+        border-right: 1px solid $dark;
+        border-left: 1px solid $dark;
+        font-size: 1.3em;
+        background: lighten($dark, 2%);
+        color: $gray-100;
+    }
+
+    .nav-item:first-child {
+        border-left: none;
+    }
+
+    .nav-item.active {
+        background-color: $gray-300;
+    }
+
+    .nav-item:hover {
+        background: $link-blue;
+    }
+
+    .nav-item.active:hover {
+        background-color: $gray-300;
+    }
+
+    .nav-item a {
+        line-height: 50px;
+        padding: 15px 25px !important;
+        color: $gray-600 !important;
+    }
+
+    .nav-item:hover a {
+        color: $dark !important;
+    }
+}
+
+.nav-child {
+
+
+    .nav-item {
+        font-size: .8em;
+        padding: 10px !important;
+        color: $gray-100;
+    }
+
+    .nav-item:hover, .nav-item:hover a {
+        color: $link-blue !important;
+    }
+
+    .nav-item.active a {
+        color: $link-blue !important;
+    }
+}

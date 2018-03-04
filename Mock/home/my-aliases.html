@@ -1,0 +1,163 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!--<link rel="icon" href="../../favicon.ico">-->
+
+    <title>Starter Template for Bootstrap</title>
+
+
+    <!-- Bootstrap core CSS -->
+    <!--<link href="../../dist/css/bootstrap.min.css" rel="stylesheet">-->
+    <!--<link href="public/build/css/stylesheet.css" rel="stylesheet" />-->
+
+    <link href="../assets/css/style.css" rel="stylesheet" />
+    <!-- Custom styles for this template -->
+    <!--<link href="starter-template.css" rel="stylesheet">-->
+</head>
+
+<body>
+    <div class="container">
+        <div class="navbar-expand-md navbar-dark bg-dark pl-3">
+            <img src="https://github.com/briandarley/vue-starter/blob/master/src/assets/img/UNC_logo_white.png?raw=true" />
+            <div class="app-info pull-right">
+                <div class="user-info text-white">
+                    Welcome bdarley
+                    <a href="javascript:void(0);" class="page-quick-sidebar-toggler">
+                        <i class="fas fa-sign-out-alt"></i> sign out
+                    </a>
+                </div>
+
+                <a class="navbar-brand text-primary em-2 nav-title" href="#">
+                    Self <span class="text-white">Service</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+            </div>
+        </div>
+        <nav class="navbar navbar-expand-md navbar-light nav-parent p-0 bg-dark">
+            <div class="collapse navbar-collapse " id="navbarSupportedContent2">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="../index.html"><i class="fa fa-home mr-2"></i> Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="list-serve-subscriptions.html"><i class="fa fa-list-alt mr-2"></i> List Manager</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="my-aliases.html"><i class="fa fa-boxes mr-2"></i> Mass Mail</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#"><i class="fa fa-cogs mr-2"></i> Win Tools</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#"><i class="fab fa-microsoft mr-2"></i> Groups</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <nav class="navbar navbar-expand-md navbar-light p-0 nav-child">
+            <div class="bg-off-white w-100">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html"><i class="fa fa-envelope mr-2"></i> Email Sign-up</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="list-serve-subscriptions.html"><i class="fa fa-list-alt mr-2"></i> List-serve Subscriptions</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="my-aliases.html"><i class="fa fa-users mr-2"></i> My Aliases</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="my-ad-groups.html"><i class="fa fa-object-group mr-2"></i> My AD Groups</a>
+                    </li>
+
+                </ul>
+            </div>
+        </nav>
+        <div class="container main-content">
+            <div class="card">
+                <div class="card-header bg-primary text-light">Mail Routing</div>
+                <div class="card-body">
+                    <div class="form-container">
+
+                        <div id="content_content_pnlMain" class="w-100">
+
+                            <table class="w-100">
+                                <tbody>
+                                    <tr>
+                                        <td>
+
+                                            <div class="card hidden panel-3">
+                                                <div class="card-header bg-warning text-light">
+                                                    Account Type
+                                                    <a href="#" onclick="toggle('panel-3');" class="pull-right text-light">
+                                                        <i class="fa fa-close"></i>
+                                                    </a>
+                                                </div>
+                                                <div class="card-body">
+                                                    <p>
+                                                        "Mailbox" is a regular local Exchange account.
+                                                        "MailUser" is a routing only account.
+                                                        "RemoteMailbox" is a routing only account indicating the mailbox was migrated to @live.
+                                                    </p>
+                                                </div>
+                                            </div>
+
+
+                                            <div id="content_content_pnlChoices" class="w-100">
+
+                                                <table id="content_content_rblChoices" class="checkbox-list mb-5">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td><input type="radio" value="show"><label>Show Aliases</label></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><input type="radio" value="add"><label>Add Alias</label></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><input type="radio" value="remove"><label>Remove Alias</label></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><input type="radio" value="primary"><label>Set Primary</label></td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                                <a class="btn btn-outline-primary" role="button" href="#">
+                                                    <i class="fa fa-chevron-left"></i>
+                                                    Back
+                                                </a>
+                                                
+                                                <a class="btn btn-outline-primary pull-right" role="button" href="#">
+                                                    <i class="fa fa-chevron-right"></i>
+                                                    Next
+                                                </a>
+
+
+                                            </div>
+
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/js/ie10-viewport-bug-workaround.js"></script>
+    <script src="../public/build/js/bundle.js"></script>
+</body>
+</html>

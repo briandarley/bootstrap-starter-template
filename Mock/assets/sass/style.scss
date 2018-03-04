@@ -1,0 +1,42 @@
+﻿@import "variables";
+$fa-font-path: "node_modules/font-awesome/fonts";
+$fa-font-path: "../../node_modules/font-awesome/fonts";
+@import "node_modules/font-awesome/scss/font-awesome";
+
+@import "node_modules/bootstrap/scss/bootstrap";
+@import "nav-bar";
+@import "https://fonts.googleapis.com/css?family=Roboto";
+@import "https://fonts.googleapis.com/css?family=Oswald";
+
+
+
+
+body {
+    font-family: 'Roboto'
+}
+
+.absolute {
+    position: absolute;
+}
+
+.em-2 {
+    font-size: 2em;
+}
+
+.bg-off-white {
+    background-color: $gray-300;
+}
+
+.hidden {
+    display: none;
+}
+
+.main-content {
+    background-color: $gray-100;
+    padding: 10px;
+    min-height: 500px;
+    .checkbox-list label{
+        margin-left:10px;
+
+    }
+}

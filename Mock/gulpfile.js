@@ -10,7 +10,11 @@ var browserSync = require('browser-sync').create();
 gulp.task('pack-js', function () {
   return gulp.src(['node_modules/jquery/dist/jquery.min.js',
     'node_modules/popper.js/dist/umd/popper.min.js',
-    'node_modules/bootstrap/dist/js/bootstrap.min.js'])
+    'node_modules/bootstrap/dist/js/bootstrap.min.js',
+    'node_modules/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js'])
+
+    
+
     .pipe(concat('bundle.js'))
     .pipe(gulp.dest('public/build/js'));
 });
@@ -19,7 +23,9 @@ gulp.task('pack-css', function () {
   return gulp.src([
     'assets/css/bootstrap.css',
     'assets/css/font-awesome.css',
-    'assets/css/style.css'])
+    'node_modules/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css',
+    'assets/css/style.css'
+  ])
     .pipe(concat('stylesheet.css'))
     .pipe(gulp.dest('public/build/css'));
 });
@@ -57,8 +63,12 @@ gulp.task('styles', function () {
 
 });
 
+gulp.task('move',
+  function() {
+    gulp.src('node_modules/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css')
+      .pipe(gulp.dest('./assets/css/'));
 
-
+  });
 gulp.task('watch', function() {
     gulp.watch('assets/sass/**/*.scss', ['styles']);
   }
@@ -67,7 +77,7 @@ gulp.task('watch', function() {
 gulp.task('default', ['styles', 'pack-js', 'pack-css','fonts']);
 
 //gulp.task('all', ['watch', 'webserver']);
-gulp.task('all', ['styles','fonts'],
+gulp.task('all', ['move', 'pack-js','styles','fonts'],
   function() {
     browserSync.init({ server: '.' });
 

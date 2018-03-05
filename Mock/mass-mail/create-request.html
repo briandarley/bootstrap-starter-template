@@ -1,0 +1,229 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!--<link rel="icon" href="../../favicon.ico">-->
+
+    <title>Starter Template for Bootstrap</title>
+
+
+    <!-- Bootstrap core CSS -->
+    <!--<link href="../../dist/css/bootstrap.min.css" rel="stylesheet">-->
+    <!--<link href="public/build/css/stylesheet.css" rel="stylesheet" />-->
+
+    <link href="../assets/css/style.css" rel="stylesheet" />
+    <link href="../assets/css/bootstrap-datepicker.min.css" rel="stylesheet" />
+    <!-- Custom styles for this template -->
+    <!--<link href="starter-template.css" rel="stylesheet">-->
+</head>
+
+<body>
+    <div class="container">
+        <div class="navbar-expand-md navbar-dark bg-dark pl-3">
+            <img src="https://github.com/briandarley/vue-starter/blob/master/src/assets/img/UNC_logo_white.png?raw=true" />
+            <div class="app-info pull-right">
+                <div class="user-info text-white">
+                    Welcome bdarley
+                    <a href="javascript:void(0);" class="page-quick-sidebar-toggler">
+                        <i class="fas fa-sign-out-alt"></i> sign out
+                    </a>
+                </div>
+
+                <a class="navbar-brand text-primary em-2 nav-title" href="#">
+                    Self <span class="text-white">Service</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+            </div>
+        </div>
+        <nav class="navbar navbar-expand-md navbar-light nav-parent p-0 bg-dark">
+            <div class="collapse navbar-collapse " id="navbarSupportedContent2">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item ">
+                        <a class="nav-link" href="../index.html"><i class="fa fa-home mr-2"></i> Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../list-manager/index.html"><i class="fa fa-list-alt mr-2"></i> List Manager</a>
+                    </li>
+                    <li class="nav-item dropdown active">
+                        <a class="nav-link" href="../mass-mail/index.html"><i class="fa fa-boxes mr-2"></i> Mass Mail</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#"><i class="fa fa-cogs mr-2"></i> Win Tools</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#"><i class="fab fa-microsoft mr-2"></i> Groups</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <nav class="navbar navbar-expand-md navbar-light p-0 nav-child">
+            <div class="bg-off-white w-100">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html"><i class="fa fa-info mr-2"></i> Information</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="create-request.html"><i class="fa fa-comment mr-2"></i> Create Request</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html"><i class="fa fa-search mr-2"></i> View Request</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html"><i class="fa fa-archive mr-2"></i> Archives</a>
+                    </li>
+
+                </ul>
+            </div>
+        </nav>
+        <div class="container main-content">
+            <div class="card">
+                <div class="card-header bg-primary text-light">Create Mass Mail</div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-sm-6 ">
+                            <div class="form-inline input-group">
+                                <label class="col-sm-5 d-inline-block text-right">Send Date</label>
+                                <input type="text"
+                                       class="form-control datepicker picker1"
+                                       placeholder="mm/dd/yyyy">
+                                <div class="input-group-append" onclick="showCalendar('picker1')">
+                                    <span class="input-group-text">
+                                        <i class="fa fa-calendar"></i>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 ">
+                            <div class="form-inline input-group">
+                                <label class="col-sm-5 d-inline-block text-right">Expiration Date</label>
+                                <input type="text"
+                                       class="form-control datepicker picker2"
+                                       placeholder="mm/dd/yyyy">
+                                <div class="input-group-append" onclick="showCalendar('picker2')">
+                                    <span class="input-group-text">
+                                        <i class="fa fa-calendar"></i>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row my-1">
+                        <div class="col-sm-6 form-inline">
+                            <label class="col-sm-5 d-inline-block text-right">E-mail Target Population</label>
+                            <select class="form-control col-sm-7">
+                                <option>-- Select --</option>
+                                <option>Employees</option>
+                                <option>Students</option>
+                                <option>Employees and Students</option>
+                                <option>Testing Only</option>
+                            </select>
+                                
+                        </div>
+                        <div class="col-sm-6 ">
+                            <div class="form-inline input-group">
+                                <label class="col-sm-5 d-inline-block text-right">Send From</label>
+                                <input type="text"
+                                       class="form-control"
+                                       placeholder="no_reply@unc.edu">
+                                <div class="input-group-append">
+                                    <span class="input-group-text">
+                                        <i class="fa fa-at"></i>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+
+                        
+                    </div>
+                    <div class="row my-1">
+                        <div class="col-sm-6 ">
+                            <div class="form-inline input-group">
+                                <label class="col-sm-5 d-inline-block text-right">Reply To</label>
+                                <input type="text"
+                                       class="form-control"
+                                >
+                                <div class="input-group-append">
+                                    <span class="input-group-text">
+                                        <i class="fa fa-at"></i>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 form-inline">
+                            <label class="col-sm-5 d-inline-block text-right">Priority</label>
+                            <select class="form-control col-sm-7">
+                                <option>-- Select --</option>
+                                <option>Informational</option>
+                                <option>Formal Notice</option>
+                            </select>
+                                
+                        </div>
+                    </div>
+                    <div class="row my-1">
+                        <div class="col-sm-12 ">
+                            <div class="form-group">
+                                <label class="">Subject</label>
+                                <input type="text"
+                                       class="form-control">
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row my-1">
+                        <div class="col-sm-12 ">
+                            <div class="form-group">
+                                <label class="">Sponsoring University
+                                    Department or Organization	</label>
+                                <input type="text"
+                                       class="form-control">
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row my-1">
+                        <div class="col-sm-12 ">
+                            <div class="form-group">
+                                <label class="">
+                                    Add Comments 
+                                    (optional, not published)
+                                </label>
+                                <textarea
+                                       class="form-control"></textarea>
+
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btn btn-outline-primary pull-right">Next <i class="fa fa-chevron-right"></i></button>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/js/ie10-viewport-bug-workaround.js"></script>
+    <script src="../public/build/js/bundle.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.datepicker').datepicker()
+                .on('changeDate',
+                    function(e) {
+                        $(this).datepicker('hide');
+                    });
+
+        });
+
+        function showCalendar(control) {
+            $('.' + control).datepicker('show');
+        }
+    </script>
+</body>
+</html>

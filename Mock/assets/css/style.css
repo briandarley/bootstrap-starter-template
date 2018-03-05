@@ -14465,3 +14465,7 @@ body {
   min-height: 500px; }
   .main-content .checkbox-list label {
     margin-left: 10px; }
+
+.datepicker-days {
+  font-family: Arial;
+  font-size: .9em; }

@@ -84,6 +84,8 @@
     <Content Include="home\list-serve-subscriptions.html" />
     <Content Include="index.html" />
     <Content Include="list-manager\index.html" />
+    <Content Include="mass-mail\create-request.html" />
+    <Content Include="mass-mail\index.html" />
     <Content Include="public\build\css\bootstrap.css" />
     <Content Include="public\build\css\font-awesome.css" />
     <Content Include="Web.config" />
